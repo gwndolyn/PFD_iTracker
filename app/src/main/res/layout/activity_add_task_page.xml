@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".AddTaskPage">
+
+        <ImageView
+            android:id="@+id/backHome2"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_back"
+            android:contentDescription ="@string/button"/>
+
+        <Button
+            android:id="@+id/saveEditTaskButton"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/btn_circle"
+            android:drawableEnd="@drawable/ic_addbutton"
+            android:fontFamily="@font/roboto"
+            android:padding="15dp"
+            android:text="Create"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editCurrentTaskDeadline" />
+
+        <EditText
+            android:id="@+id/editCurrentTaskStartTime"
+            android:layout_width="320dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="44dp"
+            android:autofillHints="Start Time"
+            android:background="@drawable/custom_input"
+            android:backgroundTint="#e9e0d4"
+            android:drawableEnd="@drawable/ic_time"
+            android:ems="10"
+            android:focusable="false"
+            android:fontFamily="@font/roboto"
+            android:hint="Start Time"
+            android:inputType="datetime"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editCurrentTaskDescription" />
+
+        <EditText
+            android:id="@+id/editCurrentTaskDeadline"
+            android:layout_width="320dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="44dp"
+            android:autofillHints="Deadline"
+            android:background="@drawable/custom_input"
+            android:backgroundTint="#e9e0d4"
+            android:drawableEnd="@drawable/ic_deadline"
+            android:ems="10"
+            android:focusable="false"
+            android:fontFamily="@font/roboto"
+            android:hint="Deadline"
+            android:inputType="datetime"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editCurrentTaskStartTime" />
+
+        <EditText
+            android:id="@+id/editCurrentTaskTitle"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="44dp"
+            android:autofillHints="Title"
+            android:background="@drawable/custom_input"
+            android:backgroundTint="#e9e0d4"
+            android:ems="10"
+            android:fontFamily="@font/roboto"
+            android:hint="Title"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addTaskTitle" />
+
+
+        <EditText
+            android:id="@+id/editCurrentTaskDescription"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="44dp"
+            android:autofillHints="Description"
+            android:background="@drawable/custom_input"
+            android:backgroundTint="#e9e0d4"
+            android:ems="10"
+            android:fontFamily="@font/roboto"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editCurrentTaskTitle" />
+
+        <TextView
+            android:id="@+id/addTaskTitle"
+            android:layout_width="244dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="144dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="144dp"
+            android:fontFamily="@font/oswald"
+            android:text="Add New Task"
+            android:textAlignment="center"
+            android:textColor="#6F5642"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

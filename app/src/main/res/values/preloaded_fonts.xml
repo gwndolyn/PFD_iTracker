@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/alata</item>
+        <item>@font/baloo_tamma</item>
+        <item>@font/calistoga</item>
+        <item>@font/fredoka_one</item>
+        <item>@font/oswald</item>
+        <item>@font/roboto</item>
+        <item>@font/shrikhand</item>
+    </array>
+</resources>
