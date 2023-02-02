@@ -4,17 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg6"
+    android:background="@drawable/background"
     android:backgroundTintMode="add"
     android:orientation="vertical"
     tools:context=".Login">
-
-    <ImageView
-        android:id="@+id/backHome"
-        android:layout_width="65dp"
-        android:layout_height="65dp"
-        app:srcCompat="@drawable/ic_back"
-        android:contentDescription="@string/button"/>
 
     <TextView
         android:id="@+id/textView6"
@@ -24,7 +17,7 @@
         android:layout_marginTop="100dp"
         android:fontFamily="@font/oswald"
         android:text="WELCOME to OCBC"
-        android:textColor="#E31A1A"
+        android:textColor="#B30202"
         android:textSize="40sp"
         android:textStyle="bold" />
 
@@ -53,14 +46,14 @@
         android:layout_height="53dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
+        android:autofillHints="Password"
         android:background="@drawable/custom_input"
         android:drawableStart="@drawable/ic_lock"
         android:drawablePadding="12dp"
         android:ems="10"
         android:fontFamily="@font/roboto"
         android:hint="Password"
-        android:autofillHints="Password"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:paddingStart="8dp"
         android:textColor="#000000"
         app:layout_constraintTop_toBottomOf="@+id/editTextUsername"
@@ -72,7 +65,7 @@
         android:layout_height="65dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="40dp"
-        android:background="@drawable/btn_bg"
+        android:background="@android:color/holo_red_dark"
         android:fontFamily="@font/roboto"
         android:text="login"
         android:textColor="#FFFFFF"
@@ -88,11 +81,9 @@
         android:layout_height="65dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/btn_bg"
-        android:backgroundTint="#6F5643"
         android:fontFamily="@font/roboto"
         android:text="new user?"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
         app:cornerRadius="70dp"

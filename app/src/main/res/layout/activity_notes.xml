@@ -25,7 +25,7 @@
     </ListView>
 
     <ImageView
-        android:id="@+id/backHome"
+        android:id="@+id/backHome6"
         android:layout_width="65dp"
         android:layout_height="65dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,7 +46,7 @@
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/backHome"
+        app:layout_constraintStart_toStartOf="@+id/backHome6"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

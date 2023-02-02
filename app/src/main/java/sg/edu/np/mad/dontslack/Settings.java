@@ -20,7 +20,7 @@ public class Settings extends AppCompatActivity {
         actionBar.hide();
 
         //Back button
-        ImageView backHomePage = findViewById(R.id.backHome);
+        ImageView backHomePage = findViewById(R.id.backHome6);
         backHomePage.setOnClickListener(v -> {
             Intent myIntent = new Intent(Settings.this, HomePage.class);
             startActivity(myIntent);
@@ -39,5 +39,6 @@ public class Settings extends AppCompatActivity {
             Intent myIntent = new Intent(Settings.this, About.class);
             startActivity(myIntent);
         });
+
     }
 }

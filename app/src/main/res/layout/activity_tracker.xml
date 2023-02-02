@@ -16,7 +16,7 @@
         app:srcCompat="@drawable/image_2023_01_28_15_00_18" />
 
     <Button
-        android:id="@+id/backHome"
+        android:id="@+id/backHome6"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginTop="252dp"

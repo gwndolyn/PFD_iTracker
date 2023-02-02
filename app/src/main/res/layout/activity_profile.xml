@@ -8,7 +8,7 @@
 
 
     <ImageView
-        android:id="@+id/backHome"
+        android:id="@+id/backHome6"
         android:layout_width="65dp"
         android:layout_height="65dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,11 +21,10 @@
         android:layout_width="match_parent"
         android:layout_height="180dp"
         android:layout_marginTop="8dp"
-        android:background="#F4F1E2"
         android:padding="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/backHome">
+        app:layout_constraintTop_toBottomOf="@+id/backHome6">
 
         <ImageView
             android:id="@+id/profileImage"
@@ -33,9 +32,9 @@
             android:layout_height="100dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="15dp"
-            android:background="@drawable/btn_circle"
-            android:src="@drawable/ic_profile"
-            android:contentDescription="@null"/>
+            android:background="@android:color/holo_red_light"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_profile" />
 
     </RelativeLayout>
 

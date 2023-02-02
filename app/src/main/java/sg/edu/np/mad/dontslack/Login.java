@@ -33,11 +33,11 @@ public class Login extends AppCompatActivity {
         assert actionBar != null;
         actionBar.hide();
 
-        ImageView backHomePage = findViewById(R.id.backHome);
-        backHomePage.setOnClickListener(v -> {
-            Intent myIntent = new Intent(Login.this, HomePage.class);
-            startActivity(myIntent);
-        });
+      //  ImageView backHomePage = findViewById(R.id.backHome);
+      //  backHomePage.setOnClickListener(v -> {
+      //      Intent myIntent = new Intent(Login.this, HomePage.class);
+      //      startActivity(myIntent);
+      //  });
 
         /* Login Button */
         Button myLoginButton = findViewById(R.id.loginButton);

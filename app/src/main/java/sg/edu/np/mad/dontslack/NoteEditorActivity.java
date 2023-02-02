@@ -29,7 +29,7 @@ public class NoteEditorActivity extends AppCompatActivity {
         assert actionBar != null;
         actionBar.hide();
 
-        ImageView backHomePage = findViewById(R.id.backHome);
+        ImageView backHomePage = findViewById(R.id.backHome6);
         backHomePage.setOnClickListener(v -> {
             Intent myIntent = new Intent(NoteEditorActivity.this, Notes.class);
             startActivity(myIntent);

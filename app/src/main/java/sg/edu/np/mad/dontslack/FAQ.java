@@ -18,7 +18,7 @@ public class FAQ extends AppCompatActivity{
         assert actionBar != null;
         actionBar.hide();
 
-        ImageView backHomePage = findViewById(R.id.backHome);
+        ImageView backHomePage = findViewById(R.id.backHome6);
         backHomePage.setOnClickListener(v -> {
             Intent myIntent = new Intent(FAQ.this, HomePage.class);
             startActivity(myIntent);

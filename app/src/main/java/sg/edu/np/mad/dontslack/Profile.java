@@ -1,18 +1,14 @@
 package sg.edu.np.mad.dontslack;
 
 import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import org.w3c.dom.Text;
 
 import java.io.Serializable;
 
@@ -47,7 +43,7 @@ public class Profile extends AppCompatActivity {
         }
 
         //Back button
-        ImageView backHomePage = findViewById(R.id.backHome);
+        ImageView backHomePage = findViewById(R.id.backHome6);
         backHomePage.setOnClickListener(v -> {
             Intent myIntent = new Intent(Profile.this, HomePage.class);
             startActivity(myIntent);
@@ -93,7 +89,7 @@ public class Profile extends AppCompatActivity {
             editor.apply();
             Toast.makeText(Profile.this, "Log out successfully", Toast.LENGTH_SHORT).show();
             finish();
-            Intent myIntent = new Intent(Profile.this, HomePage.class);
+            Intent myIntent = new Intent(Profile.this, Login.class);
             startActivity(myIntent);
         });
 

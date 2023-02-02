@@ -7,7 +7,7 @@
     tools:context=".NoteEditorActivity">
 
     <ImageView
-        android:id="@+id/backHome"
+        android:id="@+id/backHome6"
         android:layout_width="65dp"
         android:layout_height="65dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,7 +39,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/backHome"
+        app:layout_constraintTop_toBottomOf="@+id/backHome6"
         app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

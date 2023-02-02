@@ -106,7 +106,7 @@
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Login"
+            android:name=".HomePage"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait" />
@@ -116,10 +116,10 @@
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".HomePage"
+            android:name=".Login"
             android:configChanges="orientation"
             android:exported="true"
-            android:label="Don&apos;t Slack"
+            android:label="iTracker"
             android:screenOrientation="portrait"
             android:launchMode="singleTop">
             <intent-filter>

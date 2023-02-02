@@ -32,8 +32,8 @@
             android:layout_marginStart="90dp"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/roboto"
-            android:text="About "
-            android:textSize="24sp" />
+            android:text="Contact"
+            android:textSize="16sp" />
 
         <ImageView
             android:id="@+id/aboutView"
@@ -81,48 +81,11 @@
             android:layout_marginTop="20dp"
             android:fontFamily="@font/roboto"
             android:text="Notification"
-            android:textSize="24sp" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/contactRelativeLayout"
-        android:layout_width="379dp"
-        android:layout_height="67dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="195dp"
-        android:layout_marginEnd="16dp"
-        android:background="#F4F4F4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/backHome">
-
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="39dp"
-            android:layout_height="37dp"
-            android:layout_marginStart="320dp"
-            android:layout_marginTop="15dp"
-            app:srcCompat="@drawable/ic_arrowright" />
-
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_email_foreground" />
-
-        <TextView
-            android:id="@+id/textView18"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="90dp"
-            android:layout_marginTop="20dp"
-            android:fontFamily="@font/roboto"
-            android:text="Contact"
-            tools:textSize="96sp" />
+            android:textSize="16sp" />
     </RelativeLayout>
 
     <ImageView
-        android:id="@+id/backHome"
+        android:id="@+id/backHome6"
         android:layout_width="65dp"
         android:layout_height="65dp"
         app:layout_constraintStart_toStartOf="parent"

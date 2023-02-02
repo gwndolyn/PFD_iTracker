@@ -44,7 +44,7 @@ public class Calendar extends AppCompatActivity implements CalendarAdapter.OnIte
         actionBar.hide();
 
         //back button
-        ImageView backHomePage = findViewById(R.id.backHome);
+        ImageView backHomePage = findViewById(R.id.backHome6);
         backHomePage.setOnClickListener(v -> {
             Intent myIntent = new Intent(Calendar.this, HomePage.class);
             startActivity(myIntent);

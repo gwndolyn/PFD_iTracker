@@ -7,7 +7,7 @@
     tools:context=".Contact">
 
     <ImageView
-        android:id="@+id/backHome"
+        android:id="@+id/backHome6"
         android:layout_width="65dp"
         android:layout_height="65dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -84,6 +84,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="160dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/tracker_image" />
 

@@ -19,7 +19,7 @@ public class Contact extends AppCompatActivity {
         actionBar.hide();
 
         //Back home page button
-        ImageView backHomePage = findViewById(R.id.backHome);
+        ImageView backHomePage = findViewById(R.id.backHome6);
         backHomePage.setOnClickListener(v -> {
             Intent myIntent = new Intent(Contact.this, HomePage.class);
             startActivity(myIntent);

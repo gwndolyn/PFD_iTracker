@@ -7,12 +7,10 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.drawable.AnimationDrawable;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 public class MusicPlayer extends AppCompatActivity implements View.OnClickListener{
     //MediaPlayer player;
@@ -36,7 +34,7 @@ public class MusicPlayer extends AppCompatActivity implements View.OnClickListen
         serviceIntent = new Intent(getApplicationContext(), MyService.class);
 
         //Back home page button
-        ImageView backHomePage = findViewById(R.id.backHome);
+        ImageView backHomePage = findViewById(R.id.backHome6);
         backHomePage.setOnClickListener(v -> {
             Intent myIntent = new Intent(MusicPlayer.this, HomePage.class);
             startActivity(myIntent);

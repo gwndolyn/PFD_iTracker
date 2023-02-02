@@ -5,10 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Html;
-import android.text.method.LinkMovementMethod;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 public class Tracker extends AppCompatActivity {
 
@@ -23,7 +20,7 @@ public class Tracker extends AppCompatActivity {
         assert actionBar != null;
         actionBar.hide();
 
-       ImageView goBackButton = findViewById(R.id.backHome);
+       ImageView goBackButton = findViewById(R.id.backHome6);
         goBackButton.setOnClickListener(v -> {
             Intent myIntent2 = new Intent(Tracker.this, HomePage.class);
             startActivity(myIntent2);
