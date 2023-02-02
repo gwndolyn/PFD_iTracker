@@ -15,30 +15,6 @@
         app:srcCompat="@drawable/ic_back"
         android:contentDescription="@string/button"/>
 
-    <RelativeLayout
-        android:id="@+id/relativeLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:layout_marginTop="8dp"
-        android:background="#F4F1E2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView30">
-
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="35dp"
-            android:background="@drawable/btn_circle"
-            android:foregroundGravity="center"
-            app:srcCompat="@drawable/ic_email_foreground"
-            android:contentDescription="@null"/>
-
-    </RelativeLayout>
-
     <TextView
         android:id="@+id/textView30"
         android:layout_width="wrap_content"
@@ -47,8 +23,8 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="10dp"
         android:fontFamily="@font/oswald"
-        android:text="Contact Us"
-        android:textColor="#6f5642"
+        android:text="iTracker"
+        android:textColor="#FF0000"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -62,14 +38,14 @@
         android:layout_marginTop="16dp"
         android:fontFamily="@font/roboto"
         android:gravity="center_horizontal"
-        android:text="Having some problems?"
-        android:textAlignment="center"
-        android:textColor="#6f5542"
-        android:textSize="24sp"
+        android:text="Acount Number: 100000006"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
     <TextView
         android:id="@+id/textView14"
@@ -78,11 +54,11 @@
         android:layout_marginStart="120dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="120dp"
-        android:fontFamily="@font/oswald"
-        android:text="Email us at"
+        android:fontFamily="@font/roboto"
+        android:text="Account type: Basic trading Account"
         android:textAlignment="center"
-        android:textColor="#6F5642"
-        android:textSize="34sp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -93,16 +69,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="20dp"
         android:fontFamily="@font/roboto"
-        android:padding="10dp"
-        android:text="itracker@ocbc.com"
+        android:text="Est. date of completion: 13/11/2022"
         android:textColor="@color/black"
-        android:textSize="24sp"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tracker_image" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -63,11 +63,6 @@ public class HomePage extends AppCompatActivity {
         TextView profileTextView = findViewById(R.id.ifLoginMessage);
         //If login it will be profile button
         if(IsLogin){
-            Button myTrackerButton = findViewById(R.id.trackerButton);
-            myTrackerButton.setOnClickListener(v -> {
-                Intent myIntent = new Intent(HomePage.this, Tracker.class);
-                startActivity(myIntent);
-            });
             profileTextView.setText("Profile");
             ImageView profileImage = findViewById(R.id.profileButton);
             profileImage.setOnClickListener(v -> {
@@ -125,6 +120,16 @@ public class HomePage extends AppCompatActivity {
             Intent myIntent = new Intent(HomePage.this, Settings.class);
             startActivity(myIntent);
         });
+
+        //Tracker button
+        //Button myTrackerButton = findViewById(R.id.trackerButton);
+        //myTrackerButton.setOnClickListener(new View.OnClickListener() {
+        //    @Override
+         //   public void onClick(View view) {
+          //      Intent track = new Intent(HomePage.this, Tracker.class);
+           //     startActivity(track);
+          //  }
+     //   });
 
         //switch to musicplayer
         //Switch mySwitch = findViewById(R.id.switch1);
