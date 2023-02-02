@@ -67,23 +67,23 @@ public class Profile extends AppCompatActivity {
         });
 
         //Delete account button
-        TextView deleteAccountButton = findViewById(R.id.deleteAccountButton);
-        deleteAccountButton.setOnClickListener(v -> {
-            AlertDialog alertDialog = new AlertDialog.Builder(Profile.this).create();
-            alertDialog.setTitle("Delete Account");
-            alertDialog.setMessage("Are you sure you want to delete this account?");
-            alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "No", (dialog, which) -> dialog.dismiss());
-            alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Yes, I'm sure.", (dialog, which) -> {
-                dbHandler.deleteUser(user);
-                sharedPreferences = getSharedPreferences(SHARED_PREF_NAME, MODE_PRIVATE);
-                SharedPreferences.Editor editor = sharedPreferences.edit();
-                editor.putBoolean(KEY_LOGIN, false);
-                editor.apply();
-                Intent myIntent = new Intent(Profile.this, HomePage.class);
-                startActivity(myIntent);
-            });
-            alertDialog.show();
-        });
+      //  TextView deleteAccountButton = findViewById(R.id.deleteAccountButton);
+      //  deleteAccountButton.setOnClickListener(v -> {
+     //       AlertDialog alertDialog = new AlertDialog.Builder(Profile.this).create();
+       //     alertDialog.setTitle("Delete Account");
+      //      alertDialog.setMessage("Are you sure you want to delete this account?");
+       //     alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "No", (dialog, which) -> dialog.dismiss());
+        //    alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Yes, I'm sure.", (dialog, which) -> {
+        //        dbHandler.deleteUser(user);
+         //       sharedPreferences = getSharedPreferences(SHARED_PREF_NAME, MODE_PRIVATE);
+        //        SharedPreferences.Editor editor = sharedPreferences.edit();
+         //       editor.putBoolean(KEY_LOGIN, false);
+         //       editor.apply();
+        //        Intent myIntent = new Intent(Profile.this, HomePage.class);
+        //        startActivity(myIntent);
+        //    });
+        //    alertDialog.show();
+      //  });
 
         //Logout account button
         TextView logoutButton = findViewById(R.id.logoutButton);

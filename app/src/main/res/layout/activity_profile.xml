@@ -91,7 +91,7 @@
         android:layout_marginEnd="144dp"
         android:fontFamily="@font/oswald"
         android:text="Profile"
-        android:textColor="#DD1C1C"
+        android:textColor="#FF0000"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -103,7 +103,7 @@
         android:layout_width="165dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="60dp"
         android:fontFamily="@font/roboto"
         android:text="LOGOUT "
         android:textAlignment="viewStart"
@@ -111,22 +111,7 @@
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/deleteAccountButton" />
-
-    <TextView
-        android:id="@+id/deleteAccountButton"
-        android:layout_width="165dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="34dp"
-        android:fontFamily="@font/roboto"
-        android:text="DELETE ACCOUNT"
-        android:textColor="#cc6b49"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textProfilePassword"
-        tools:ignore="UseCompatTextViewDrawableXml" />
+        app:layout_constraintTop_toBottomOf="@+id/textProfilePassword" />
 
     <TextView
         android:id="@+id/textView10"
