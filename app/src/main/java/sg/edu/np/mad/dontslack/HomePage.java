@@ -147,28 +147,11 @@ public class HomePage extends AppCompatActivity {
         JsonArrayRequest request = new JsonArrayRequest(Request.Method.GET, url,null, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
-                quote = "";
-                author = "";
-                try {
-                    JSONObject data = response.getJSONObject(0);
-                    quote = data.getString("q");
-                    author = data.getString("a");
-                } catch(JSONException e){
-                    e.printStackTrace();
-                }
-                SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd", Locale.US);
-                String currentDate = sdf.format(new Date());
-                if(prefs.getString("LAST_LAUNCH_DATE", "noDate").contains(currentDate))
-                {
-                    //Does Nothing if the date is the same
-                }
-                else
-                {
+                quote = "Remember to save your money with OCBC";
+                author = "Junxi";
                     showStartDialog(quote,author);
                     SharedPreferences.Editor editor = prefs.edit();
-                    editor.putString("LAST_LAUNCH_DATE", currentDate);
                     editor.apply();
-                }
             }
         }, new Response.ErrorListener() {
             @Override
