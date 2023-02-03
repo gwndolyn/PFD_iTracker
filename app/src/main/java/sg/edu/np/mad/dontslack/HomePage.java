@@ -147,7 +147,7 @@ public class HomePage extends AppCompatActivity {
         JsonArrayRequest request = new JsonArrayRequest(Request.Method.GET, url,null, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
-                quote = "ALERT: Be on heightened alert due to the ongoing phising scams. OCBC will be adjusting ITracker daily transaction limits to prevent unauthorised transactions";
+                quote = "ALERT: Be on heightened alert due to the ongoing phising scams. OCBC will be adjusting ITracker security system to prevent unauthorised transactions";
                 author = "ITracker Team (Lu Junxi)";
                     showStartDialog(quote,author);
                     SharedPreferences.Editor editor = prefs.edit();
